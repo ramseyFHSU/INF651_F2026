@@ -1,9 +1,11 @@
-console.log('--- Variables and Naming ---');
+console.log("--- Variables and Naming ---");
 
 let studentName;
-studentName = 'Chris';
+console.log(studentName); //undefined
+studentName = "Chris";
+console.log(studentName);
 
-const courseName = 'JavaScript';
+const courseName = "Front end 1";
 const finalOutputValue = 100;
 
 console.log(studentName);

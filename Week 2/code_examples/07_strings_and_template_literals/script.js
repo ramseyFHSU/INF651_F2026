@@ -1,12 +1,13 @@
-console.log('--- Strings and Template Literals ---');
+console.log("--- Strings and Template Literals ---");
 
-const firstName = 'Jonas';
-const lastName = 'Schmedtmann';
-const job = 'teacher';
+const firstName = "John";
+const lastName = "Dow";
+const job = "Web developer";
 const year = 2037;
 const birthYear = 1991;
 
-const oldWay = 'I am ' + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '.';
+const oldWay =
+  "I am " + firstName + ", a " + (year - birthYear) + " year old " + job + ".";
 console.log(oldWay);
 
 const newWay = `I am ${firstName}, a ${year - birthYear} year old ${job}.`;

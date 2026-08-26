@@ -1,10 +1,10 @@
-console.log('--- Mini Project: Profile Summary ---');
+console.log("--- Mini Project: Profile Summary ---");
 
-const firstName = 'Alex';
-const lastName = 'Taylor';
+const firstName = "John";
+const lastName = "Doe";
 const birthYear = 2005;
 const currentYear = 2026;
-const job = 'student';
+const job = "student";
 
 const fullName = `${firstName} ${lastName}`;
 const age = currentYear - birthYear;
@@ -14,4 +14,4 @@ const summary = `${fullName} is a ${age} year old ${job}. Full age: ${isFullAge}
 
 console.log(summary);
 
-document.querySelector('#output').textContent = summary;
+document.querySelector("#output").textContent = summary;

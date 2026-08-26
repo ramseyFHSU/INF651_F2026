@@ -1,9 +1,13 @@
 console.log("--- Assignment Operators ---");
 
 let x = 10 + 5;
+console.log(x);
 x += 10;
+console.log(x);
 x *= 4;
+console.log(x);
 x++;
+console.log(x);
 x--;
 console.log(x);
 
