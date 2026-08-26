@@ -1,0 +1,29 @@
+console.log("--- Assignment Operators ---");
+
+let x = 10 + 5;
+x += 10;
+x *= 4;
+x++;
+x--;
+console.log(x);
+
+console.log("--- Comparison Operators ---");
+
+const ageJonas = 46;
+const ageSarah = 19;
+const isSarahFullAge = ageSarah >= 18;
+
+console.log(ageJonas > ageSarah);
+console.log(isSarahFullAge);
+console.log(27 === "27");
+console.log(27 == "27");
+
+console.log("--- Logical Operators ---");
+
+const hasID = true;
+const isFullAge = true;
+const isGuest = false;
+
+console.log(hasID && isFullAge);
+console.log(isGuest || hasID);
+console.log(!isGuest);

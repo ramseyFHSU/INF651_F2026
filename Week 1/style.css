@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 200, 0);
+  padding: 50px;
+  font-size: 20px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.first {
+  color: red;
+}
+
+#course-image {
+  width: 300px;
+}
+
+#info-form {
+  background-color: aliceblue;
+  border: 3px solid #333;
+  padding: 25px;
+  width: 400px;
+}
+
+#info-form > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
