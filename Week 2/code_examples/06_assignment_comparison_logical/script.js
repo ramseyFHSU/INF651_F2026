@@ -19,8 +19,8 @@ const isSarahFullAge = ageSarah >= 18;
 
 console.log(ageJonas > ageSarah);
 console.log(isSarahFullAge);
-console.log(27 === "27");
-console.log(27 == "27");
+console.log(27 === "27"); //false
+console.log(27 == "27"); //true
 
 console.log("--- Logical Operators ---");
 
