@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Student Grade Checker</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Student Grade Checker</h1>
+
+      <p class="instructions">
+        Enter a score between 0 and 100 to check the letter grade.
+      </p>
+
+      <div class="grade-card">
+        <label for="score">Student Score</label>
+
+        <input
+          type="number"
+          id="score"
+          class="score-input"
+          placeholder="Enter score"
+          min="0"
+          max="100"
+        />
+
+        <button class="check-btn">Check Grade</button>
+
+        <button class="reset-btn">Reset</button>
+
+        <div class="result-box">
+          <p class="message">Enter a score to get started.</p>
+
+          <p class="grade">Grade: --</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
