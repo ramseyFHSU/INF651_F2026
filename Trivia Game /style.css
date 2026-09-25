@@ -1,0 +1,323 @@
+/* --------------------------------
+   General Page
+--------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Arial, sans-serif;
+
+  background-color: #f4f4f4;
+
+  color: #111;
+}
+
+/* --------------------------------
+   Main Game
+--------------------------------- */
+
+.game {
+  width: 90%;
+  max-width: 950px;
+
+  text-align: center;
+}
+
+.game h1 {
+  margin-bottom: 10px;
+}
+
+.instructions {
+  color: #666;
+
+  margin-bottom: 20px;
+}
+
+/* --------------------------------
+   Help Buttons
+--------------------------------- */
+
+.help-buttons {
+  margin-bottom: 25px;
+}
+
+.open-help {
+  padding: 10px 16px;
+
+  margin: 4px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+
+  background-color: white;
+
+  cursor: pointer;
+}
+
+.open-help:hover {
+  background-color: #eeeeee;
+}
+
+/* --------------------------------
+   Game Board
+--------------------------------- */
+
+.game-board {
+  display: grid;
+
+  grid-template-columns: 1fr 2fr 1fr;
+
+  gap: 20px;
+}
+
+/* --------------------------------
+   Teams
+--------------------------------- */
+
+.team {
+  background-color: #222;
+
+  color: white;
+
+  padding: 30px 20px;
+
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+.team h2 {
+  margin-top: 0;
+}
+
+.score {
+  margin: 15px 0;
+
+  font-size: 60px;
+}
+
+/* Current Team */
+
+.team--active {
+  background-color: #f5aa00;
+
+  color: #111;
+}
+
+/* Winning Team */
+
+.team--winner {
+  background-color: #198754;
+
+  color: white;
+}
+
+/* --------------------------------
+   Question Area
+--------------------------------- */
+
+.question-area {
+  background-color: white;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+  color: #777;
+
+  font-size: 14px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+}
+
+.question {
+  min-height: 70px;
+
+  margin: 25px 0;
+}
+
+/* --------------------------------
+   Buttons
+--------------------------------- */
+
+.btn {
+  padding: 12px 20px;
+
+  margin: 5px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+.btn--true {
+  background-color: #198754;
+  color: white;
+}
+
+.btn--false {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn--question {
+  background-color: #f5aa00;
+  color: #111;
+}
+
+.btn--new {
+  background-color: #222;
+  color: white;
+}
+
+/* --------------------------------
+   Result Message
+--------------------------------- */
+
+.result {
+  margin-top: 20px;
+
+  padding: 12px;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+}
+
+.success {
+  background-color: #d1e7dd;
+
+  color: #0f5132;
+}
+
+.error {
+  background-color: #f8d7da;
+
+  color: #842029;
+}
+
+/* --------------------------------
+   Controls
+--------------------------------- */
+
+.controls {
+  margin-top: 25px;
+}
+
+/* --------------------------------
+   Help Panel
+--------------------------------- */
+
+.help-panel {
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 90%;
+  max-width: 500px;
+
+  padding: 35px;
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  z-index: 10;
+}
+
+.help-panel h2 {
+  margin-top: 0;
+}
+
+.help-panel h3 {
+  margin-top: 25px;
+}
+
+.help-panel p {
+  line-height: 1.5;
+}
+
+/* --------------------------------
+   Close Button
+--------------------------------- */
+
+.close-help {
+  position: absolute;
+
+  top: 10px;
+  right: 15px;
+
+  border: none;
+
+  background: none;
+
+  font-size: 30px;
+
+  cursor: pointer;
+}
+
+/* --------------------------------
+   Overlay
+--------------------------------- */
+
+.overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  z-index: 5;
+}
+
+/* --------------------------------
+   Hidden Class
+--------------------------------- */
+
+.hidden {
+  display: none;
+}
+
+/* --------------------------------
+   Small Screens
+--------------------------------- */
+
+@media (max-width: 700px) {
+  .game-board {
+    grid-template-columns: 1fr;
+  }
+}

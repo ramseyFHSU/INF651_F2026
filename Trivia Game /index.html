@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trivia Quest</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <main class="game">
+      <h1>Two-Team Trivia Quest</h1>
+      <p class="instructions">
+        Answer True or False questions. The first team to 5 points wins.
+      </p>
+      <!-- --------------------------------
+         Help Buttons
+    --------------------------------- -->
+      <div class="help-buttons">
+        <button class="open-help">Rules</button>
+        <button class="open-help">Keyboard Tips</button>
+        <button class="open-help">Game Help</button>
+      </div>
+      <!-- --------------------------------
+         Game Board
+    --------------------------------- -->
+
+        <!-- Team A -->
+        <div class="team team--0 team--active">
+          <h2>Team A</h2>
+          <p class="score" id="score--0">0</p>
+        </div>
+        <!-- Question Area -->
+        <div class="question-area">
+          <p class="category">Category</p>
+          <h2 class="question">Click New Question to begin.</h2>
+          <div class="answer-buttons">
+            <button class="btn btn--true">True</button>
+            <button class="btn btn--false">False</button>
+          </div>
+          <p class="result hidden">Result</p>
+        </div>
+
+        <!-- Team B -->
+
+        <div class="team team--1">
+          <h2>Team B</h2>
+          <p class="score" id="score--1">0</p>
+        </div>
+      </section>
+
+      <!-- --------------------------------
+         Game Controls
+    --------------------------------- -->
+
+      <div class="controls">
+        <button class="btn btn--question">New Question</button>
+        <button class="btn btn--new">New Game</button>
+      </div>
+    </main>
+
+    <!-- --------------------------------
+       Help / Rules Panel
+  --------------------------------- -->
+
+    <div class="help-panel hidden">
+      <button class="close-help">&times;</button>
+      <h2>Trivia Quest Help</h2>
+      <h3>Game Rules</h3>
+      <p>Team A begins the game.</p>
+      <p>Click New Question to display a random True or False question.</p>
+      <p>A correct answer gives the active team one point.</p>
+      <p>After the question is answered, the turn moves to the other team.</p>
+      <p>The first team to reach 5 points wins.</p>
+      <h3>Keyboard Tip</h3>
+      <p>Press the Escape key to close this help panel.</p>
+    </div>
+
+    <!-- Background overlay -->
+    <div class="overlay hidden"></div>
+  </body>
+</html>
