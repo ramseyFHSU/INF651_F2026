@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17324d" />
+    <title>Survey Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="page-header">
+        <p class="eyebrow">JavaScript functions practice</p>
+        <h1>Survey Tracker</h1>
+        <p class="intro">
+          Answer a question, count the responses, and see the results in two
+          formats.
+        </p>
+      </header>
+
+      <section class="panel" aria-labelledby="question-heading">
+        <p class="eyebrow">Survey question</p>
+        <h2 id="question-heading">Which topic needs more practice?</h2>
+        <p class="helper">
+          Choose a number from 0 to 2 when the question appears.
+        </p>
+        <button class="survey primary-button" type="button">
+          Answer the survey
+        </button>
+        <p id="answer-message" class="message" role="status" aria-live="polite">
+          Your answer will be counted after you submit a valid number.
+        </p>
+      </section>
+
+      <section
+        class="panel results-panel"
+        aria-labelledby="results-heading"
+        aria-live="polite"
+      >
+        <div class="results-heading-row">
+          <div>
+            <p class="eyebrow">Current answers</p>
+            <h2 id="results-heading">Survey results</h2>
+          </div>
+          <span class="total"><strong id="total-count">0</strong> total</span>
+        </div>
+        <ul id="answer-counts" class="answer-counts"></ul>
+        <p class="output-label">Output</p>
+        <pre id="results-output" class="output">
+Press “Show array results” to display the current counts.</pre
+        >
+        <div class="button-row">
+          <button id="array-button" class="secondary-button" type="button">
+            Show array results
+          </button>
+          <button id="string-button" class="secondary-button" type="button">
+            Show string results
+          </button>
+          <button id="call-button" class="secondary-button" type="button">
+            Run call() examples
+          </button>
+          <button id="reset-button" class="reset-button" type="button">
+            Reset survey
+          </button>
+        </div>
+        <p id="call-output" class="call-output" aria-live="polite"></p>
+      </section>
+
+      <footer class="page-footer">
+        <p>
+          Each position in the answers array matches the same position in the
+          options array.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
