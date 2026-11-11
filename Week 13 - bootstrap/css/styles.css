@@ -1,0 +1,229 @@
+/* FHSU Tiger Black and Tiger Gold are the core colors for this theme. */
+:root {
+  --planner-background: #101011;
+  --planner-surface: #19191b;
+  --planner-surface-raised: #202023;
+  --planner-primary: #fdb913;
+  --planner-text: #f8f7f2;
+  --planner-muted: #bbb8ae;
+  --planner-border: #38383b;
+
+  --bs-body-bg: var(--planner-background);
+  --bs-body-color: var(--planner-text);
+  --bs-border-color: var(--planner-border);
+  --bs-secondary-rgb: 187, 184, 174;
+  color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--planner-background);
+  color: var(--planner-text);
+}
+
+main {
+  flex: 1;
+}
+
+.planner-navbar,
+.planner-footer {
+  background-color: #090909;
+  border-color: var(--planner-border) !important;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: var(--planner-text);
+}
+
+.fhsu-logo {
+  display: block;
+  width: 3.375rem;
+  height: 3.375rem;
+  object-fit: contain;
+}
+
+.planner-header {
+  max-width: 48rem;
+}
+
+.eyebrow {
+  color: var(--planner-primary);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.text-secondary {
+  color: var(--planner-muted) !important;
+}
+
+.summary-card,
+.form-card,
+.task-card {
+  color: var(--planner-text);
+  background-color: var(--planner-surface);
+  border: 1px solid var(--planner-border);
+  border-radius: 0.85rem;
+  transition:
+    border-color 160ms ease,
+    transform 160ms ease;
+}
+
+.summary-card:hover,
+.form-card:hover,
+.task-card:hover {
+  border-color: rgba(253, 185, 19, 0.72);
+}
+
+.summary-card {
+  background:
+    linear-gradient(145deg, rgba(253, 185, 19, 0.07), transparent 58%),
+    var(--planner-surface);
+}
+
+.summary-label {
+  color: var(--planner-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.35rem;
+}
+
+.summary-number {
+  color: var(--planner-primary);
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.form-card {
+  background-color: var(--planner-surface);
+}
+
+.form-label {
+  color: var(--planner-text);
+  font-weight: 600;
+}
+
+.form-control,
+.form-select {
+  color: var(--planner-text);
+  background-color: #111112;
+  border-color: #55555a;
+  color-scheme: dark;
+}
+
+.form-control::placeholder {
+  color: #9b9992;
+  opacity: 1;
+}
+
+.form-control:focus,
+.form-select:focus {
+  color: var(--planner-text);
+  background-color: #111112;
+  border-color: var(--planner-primary);
+  box-shadow: 0 0 0 0.25rem rgba(253, 185, 19, 0.22);
+}
+
+.form-select {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23f8f7f2' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.btn-primary {
+  --bs-btn-color: #17130a;
+  --bs-btn-bg: var(--planner-primary);
+  --bs-btn-border-color: var(--planner-primary);
+  --bs-btn-hover-color: #111;
+  --bs-btn-hover-bg: #e5a600;
+  --bs-btn-hover-border-color: #e5a600;
+  --bs-btn-active-color: #111;
+  --bs-btn-active-bg: #d99d00;
+  --bs-btn-active-border-color: #d99d00;
+  --bs-btn-disabled-color: #28210f;
+  --bs-btn-disabled-bg: #c89518;
+  --bs-btn-disabled-border-color: #c89518;
+  font-weight: 700;
+}
+
+.btn-outline-gold {
+  --bs-btn-color: var(--planner-primary);
+  --bs-btn-border-color: var(--planner-primary);
+  --bs-btn-hover-color: #17130a;
+  --bs-btn-hover-bg: var(--planner-primary);
+  --bs-btn-hover-border-color: var(--planner-primary);
+  --bs-btn-active-color: #17130a;
+  --bs-btn-active-bg: #e5a600;
+  --bs-btn-active-border-color: #e5a600;
+  --bs-btn-disabled-color: #9c781c;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #9c781c;
+  font-weight: 600;
+}
+
+.filter-control {
+  width: 100%;
+}
+
+.task-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.task-card {
+  background-color: var(--planner-surface);
+}
+
+.task-details {
+  color: var(--planner-muted);
+  font-size: 0.9rem;
+}
+
+.priority-badge {
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 0.4em 0.7em;
+}
+
+.priority-high {
+  color: #17130a;
+  background-color: var(--planner-primary);
+}
+
+.priority-medium {
+  color: var(--planner-text);
+  background-color: #48484c;
+}
+
+.priority-complete {
+  color: var(--planner-primary);
+  background-color: transparent;
+  border: 1px solid var(--planner-primary);
+}
+
+.completed-task {
+  background-color: #141416;
+}
+
+.completed-task .task-title {
+  color: var(--planner-muted);
+  text-decoration: line-through;
+}
+
+@media (min-width: 576px) {
+  .filter-control {
+    width: 12rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+}
